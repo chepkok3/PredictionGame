@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction game of numbers between 1 and 100</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Guessing Numbers Game</h1>
+
+    <p>
+      Random numbers have been selected ranging from 1 to 100. The limited
+      guessing rounds are 10 and when you get the right number a message appears
+      confirming it. Wrong attempt will also have a response. Enjoy!
+    </p>
+
+    <div class="form">
+      <label for="guessField">Enter a number (1-100): </label>
+      <input type="text" id="guessField" class="guessField" />
+      <input type="submit" value="Submit guess" class="guessSubmit" />
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="bigOrSmall"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
